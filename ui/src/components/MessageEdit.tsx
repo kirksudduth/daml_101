@@ -44,6 +44,12 @@ const MessageEdit: React.FC<Props> = ({followers}) => {
             value={receiver}
             onChange={event => setReceiver(event.currentTarget.textContent ?? undefined)}
             />
+            <Form.Input 
+                className='test-select-message-receiver'
+                placeholder="Write a message"
+                value={content}
+                onChange={event => setContent(event.currentTarget.value)}
+            />
             <Button
             fluid
             className='test-select-message-send-button'
